@@ -2,7 +2,7 @@ import React from "react";
 
 interface Expense {
   id: number;
-  description: string;
+  desciption: string;
   amount: number;
   category: string;
 }
@@ -18,7 +18,7 @@ const ExpenseList = ({ expenses, onDelete }: Props) => {
       <table className="table table-bordered">
         <thead>
           <tr>
-            <th>Description</th>
+            <th>desciption</th>
             <th>Amount</th>
             <th>Category</th>
             <th></th>
@@ -27,7 +27,7 @@ const ExpenseList = ({ expenses, onDelete }: Props) => {
         <tbody>
           {expenses.map((expense) => (
             <tr key={expense.id}>
-              <td>{expense.description}</td>
+              <td>{expense.desciption}</td>
               <td>{expense.amount}</td>
               <td>{expense.category}</td>
               <td>
